@@ -57,6 +57,8 @@ Companies rejecting all critical reviews: Since all reviews and the company’s 
 Unauthentic user may try to change the information related to product: Our system doesn’t allow such behaviour to as for each change in the information on Blockchain, it get’s the change verified from every other nodes on the SARA network (Consensus Mechanism)
 
 
+
+
 How to Run the code 
 
 #Before using the application you need to have certain tools and packages installed on your local machine
