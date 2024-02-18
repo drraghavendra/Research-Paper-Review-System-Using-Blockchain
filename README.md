@@ -1,6 +1,6 @@
+**Introduction**
 
-
-Objective The idea is to build a platform, say SARA to provide BaaS (Blockchain as a service) platform. Based on the essentials of Blockchain Technology, We, the team SARA decided to design a platform in the necessitous field such as paper publication, review industry, supply chain management, healthcare and education services on SARA network.
+Project Objective The idea is to build a platform, say SARA to provide BaaS (Blockchain as a service) platform. Based on the essentials of Blockchain Technology, We, the team SARA decided to design a platform in the necessitous field such as paper publication, review industry, supply chain management, healthcare and education services on SARA network.
 
 In recent years, many organizations have sprung up which publish journals submitted to the conferences organized by them. Such prestige system is a complex socio-economic system perpetuated by journals and researchers themselves by rewarding publication in prestigious journals and punishing a lack thereof. It is self-reinforcing and is very difficult to remove. Hence there is a need of a new reputation ecosystem which can assure the credibility of the papers published and gain the trust. The system aims at creating Decentralised Autonomous Organisation (DAO) which encourages peer review and creates its own reputation ecosystem to provide an alternative to the current prestige system that dominates academic publishing with detrimental consequences. Information is stored on the Ethereum blockchain to allow version control of documents and provide redundancy and resiliency to the information in the network.
 
@@ -20,7 +20,7 @@ Tokens(ETH and SAT)
 
 Our project is different from most other Blockchain projects since two tokens are required for the system to function smoothly. ETH is the Ethereum token which is linked to our own created token SAT for internal mechanism vital to the functioning of the platform. ETH is mainly the transaction fee for every transaction on Ethereum Blockchain whereas SAT token will be exclusively used inside the SARA network. This approach allows for a stable exchange rate. All interactions between platform, users, stakeholders and companies is based on this approach. We understand that as more and more people use our platform, the demand of the SAT token will become higher than the supply and it’s price on exchanges will start to grow. The system design ensures that the currency rate of SAT should not be affected by the market. To accomplish this, we have decided to make 1 SAT equals to 10 INR for now. It will be later decided on Crowdfunding.
 
-Design
+**Design**
 
 The main public Ethereum decentralized network, which uses the concept of smart contract, is chosen to serve as the decentralized settlement layer of the SARA Platform with SAT Token and provide transparency of transactions, submission of documents and reviews. SARA Platform introduces a hybrid architecture approach, bridging between public Ethereum chain and the high performance, scalable private side-blockchain transaction services for scalable interactions with the SAT token. The key reasons for not using a purely public chain architecture are scalability and transaction fees. The current Ethereum network’s capabilities do not allow us to launch and scale the service globally due to several issues, including:
 
@@ -29,7 +29,7 @@ The main public Ethereum decentralized network, which uses the concept of smart 
 • Every transaction on Ethereum blockchain is required to pay transaction fee in ETH which most likely will be costly and creating an adoption barrier for the average user.
 This hybrid approach will help avoid network fees in transactions between users, avoid stress on the public network due to the large volume of transactions and improve the user experience in terms of responsiveness and latency. This design is applicable for every type of review and SIRI Supply Chain where the auditor plays the same role as the reviewer in SIRI review and mainly responsible for auditing, checking the compliance of the processes and standards of Supply Chain system.
 
-Motivations and Economical problems
+**Motivations and Economical problems**
 
 How can a company be so sure that reviews are being written by genuine clients and not competitors? Doubtlessly, reviews on the internet are important and can impact the image of a company. Besides the obvious function of feedback, reviews affect the popularity of the business among new and potential clients. This eventually attracts competitors who will try to tarnish the reputation of this rival. Meanwhile , companies have no way of knowing who writes the comments/reviews.
 
@@ -41,6 +41,21 @@ Our platform implements several innovative technologies , most of which are base
 Applications 1) Blockchain based paper review system. 2) Blockchain based peer review system(Blockdoor) 3) Blockchain based supply management system.
 
 Please find the detailed explanation of above applications' design and implementation with diagrams in the attached pdf 
+
+**Limitation Factors**
+
+1)User may over populate the system by uploading many documents: The SARa platform denies such behaviour as user can be allowed to upload only limited papers in fixed time frame.
+
+2)Digital Ownership of documents: Authors can digitally sign the papers using the private key.
+
+3)Too much information needs to be stored on Blockchain: Complete information is not mandatory to be stored on Blockchain. Part of few data could be stored in database and only critically important information to be stored on Blockchain.
+
+4)Companies purchasing reviews: This type of behaviour is not economically feasible in our system, since the review fee will grow continuously.
+
+5)Companies rejecting all critical reviews: Since all reviews and the company’s rejection or approval pf them are visible to everyone on the system, companies with high rejection rates will raise suspicion.
+
+6)Unauthentic user may try to change the information related to product: Our system doesn’t allow such behaviour to as for each change in the information on Blockchain, it get’s the change verified from every other nodes on the SARA network (Consensus Mechanism)
+
 
 
 
