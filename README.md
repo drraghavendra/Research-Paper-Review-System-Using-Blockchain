@@ -42,20 +42,6 @@ Applications 1) Blockchain based paper review system. 2) Blockchain based peer r
 
 Please find the detailed explanation of above applications' design and implementation with diagrams in the attached pdf 
 
-Possible issues
-
-User may over populate the system by uploading many documents: The SARa platform denies such behaviour as user can be allowed to upload only limited papers in fixed time frame.
-
-Digital Ownership of documents: Authors can digitally sign the papers using the private key.
-
-Too much information needs to be stored on Blockchain: Complete information is not mandatory to be stored on Blockchain. Part of few data could be stored in database and only critically important information to be stored on Blockchain.
-
-Companies purchasing reviews: This type of behaviour is not economically feasible in our system, since the review fee will grow continuously.
-
-Companies rejecting all critical reviews: Since all reviews and the company’s rejection or approval pf them are visible to everyone on the system, companies with high rejection rates will raise suspicion.
-
-Unauthentic user may try to change the information related to product: Our system doesn’t allow such behaviour to as for each change in the information on Blockchain, it get’s the change verified from every other nodes on the SARA network (Consensus Mechanism)
-
 
 
 
