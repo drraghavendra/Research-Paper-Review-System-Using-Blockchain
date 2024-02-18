@@ -2,7 +2,6 @@
 
 Objective The idea is to build a platform, say SARA to provide BaaS (Blockchain as a service) platform. Based on the essentials of Blockchain Technology, We, the team SARA decided to design a platform in the necessitous field such as paper publication, review industry, supply chain management, healthcare and education services on SARA network.
 
-
 In recent years, many organizations have sprung up which publish journals submitted to the conferences organized by them. Such prestige system is a complex socio-economic system perpetuated by journals and researchers themselves by rewarding publication in prestigious journals and punishing a lack thereof. It is self-reinforcing and is very difficult to remove. Hence there is a need of a new reputation ecosystem which can assure the credibility of the papers published and gain the trust. The system aims at creating Decentralised Autonomous Organisation (DAO) which encourages peer review and creates its own reputation ecosystem to provide an alternative to the current prestige system that dominates academic publishing with detrimental consequences. Information is stored on the Ethereum blockchain to allow version control of documents and provide redundancy and resiliency to the information in the network.
 
 The review platform of the SARA network implements the Blockchain technology in order to ensure feedback legitimacy and as a backbone for the economic model which ensures that all feedback is genuine and tamper proof.
@@ -13,7 +12,7 @@ SARA tokens shall be the native token of the system, with the purpose of tokeniz
 
 #SARAARCHITECTURE 
 
-![alt image](https://github.com/Apollo9999/SARA_REVIEWMANAGER/blob/main/SARA%20ARCHITECTURE.png)
+![alt image](https://github.com/drraghavendra/Research-Paper-Review-System-Using-Blockchain/blob/main/SARA%20ARCHITECTURE.png
 
 Implementation
 
@@ -56,5 +55,48 @@ Companies purchasing reviews: This type of behaviour is not economically feasibl
 Companies rejecting all critical reviews: Since all reviews and the company’s rejection or approval pf them are visible to everyone on the system, companies with high rejection rates will raise suspicion.
 
 Unauthentic user may try to change the information related to product: Our system doesn’t allow such behaviour to as for each change in the information on Blockchain, it get’s the change verified from every other nodes on the SARA network (Consensus Mechanism)
+
+
+How to Run the code 
+
+#Before using the application you need to have certain tools and packages installed on your local machine
+
+Install go-ethereum on your machine or Geth. You can refer this for instructions.
+Install NodeJS on your local machine. You can refer this this for further instructions.
+Install Truffle on your local machine by running npm install -g truffle
+#Creating a Private Single Geth Node
+
+Create folder for chain data: mkdir datadir
+
+Initialize Blockchain network and create genesis block:
+
+geth --datadir ./datadir init init.json
+
+Start blockchain network and expose useful RPC APIs:
+geth --datadir ./datadir --networkid 2019 --rpc --rpcport 8545 --rpcaddr 127.0.0.1 --rpccorsdomain "*" --rpcapi "eth,net,web3,personal,miner"
+
+#Attaching to Geth IPC Open new terminal and enter following commands:-
+
+geth attach ./datadir/geth.ipc
+
+->personal.newAccount() #create password and remember to edit 1_initial_migration.js file accordingly found in migrations folder
+
+->eth.accounts #view accounts
+
+->miner.start()
+
+#Deploy Smart Contracts on to Blockchain
+
+Run the following commands on the new terminal in project root directory:
+
+Compile Smart Contracts truffle compile
+
+Migrate Smart Contracts to the Geth Node truffle migrate
+
+#Starting Node Application Open new terminal in project root directory:-
+
+Run npm start on your terminal. The application should start on port 3000. View the application in your favourite browser using url: http://127.0.0.1:3000
+
+
 
 
