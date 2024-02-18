@@ -47,8 +47,8 @@ Please find the detailed explanation of above applications' design and implement
 
 
 
+**Instructions TO RUN THE CODE** 
 
-How to Run the code 
 
 #Before using the application you need to have certain tools and packages installed on your local machine
 
